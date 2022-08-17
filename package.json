@@ -1,0 +1,26 @@
+{
+  "name": "mycafe-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speeed76/myCafe-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speeed76/myCafe-demo/issues"
+  },
+  "homepage": "https://github.com/speeed76/myCafe-demo#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0",
+    "sinon-chai": "^3.7.0"
+  }
+}
