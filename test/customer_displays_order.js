@@ -4,8 +4,20 @@ const chai = require('chai');
 const expect = chai.expect;
 const sinon = require('sinon');
 
+const orderSystemWith = require('../lib/orders');
+
 describe('Customer display order', () => {
     context('Given that the order is empty', ()=> {
+        beforeEach(()=> {
+            var orderADO = {
+                byId: sinon.stub();
+            };
+            orderSystem = orderSystemWith(orderADO);
+
+            this.result = orderSystem.display('some empty order id');
+
+            orderADO.byId.withArgs('some empty order id').returns([]);
+        })
 
         it('will show no order items', () => {
             expect(order).to.be.empty;
